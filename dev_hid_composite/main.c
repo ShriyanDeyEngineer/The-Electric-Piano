@@ -1,4 +1,4 @@
-/*joy and naomi hi
+/*
  * The MIT License (MIT)
  *
  * Copyright (c) 2019 Ha Thach (tinyusb.org)
@@ -20,8 +20,9 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- *
  */
+
+ /* Authors: Dat Vu, Shriyan Dey, Joy Deng, Naomi Rahn, Maaz Rahman, & Aadi Sharma */
 
 #include <stdlib.h>
 #include <stdio.h>
