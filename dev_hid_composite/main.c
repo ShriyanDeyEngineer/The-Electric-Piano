@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 /*
 =======
-/*joy and naomi hi another test ok i go it now
+/*
 >>>>>>> refs/remotes/origin/main
  * The MIT License (MIT)
  *
