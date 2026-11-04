@@ -1,7 +1,21 @@
-Write psuedo code here (plan out what the actual code will be for main.c):
+Write psuedo code here (plan out what the actual code will be for main.c)
 
+Notes:
+- Input comes from interactions on the bread board such as pushing a button.
+- User pushes a button, data gets sent to the microcontroller, the microcontroller should, BASICALLY, determine what sound comes out of the speaker.
+- PRIMARY PROBLEM: HOW EXACTLY will the user input be converted to a sound out of a speaker 
+(How do we want to set up the sounds we want to use and what external code/files can we import to help with that)?
+- 
+-------------------------------------------------------------------------
 
 MAIN FUNCTION PSUEDO CODE:
 
 
-OTHER FUNCTIONS NEEDED FOR THIS PROJECT PSUEDO CODE:
+
+--------------------------------------------------------------------------
+OTHER FUNCTIONS NEEDED FOR THIS PROJECT PSUEDO CODE (Functions specific to the product and other functions that may be needed for the microcontroller to work):
+
+
+
+Core functionality functions (code we must add ourselves to make the project work):
+
