@@ -1,0 +1,7 @@
+Write psuedo code here (plan out what the actual code will be for main.c):
+
+
+MAIN FUNCTION PSUEDO CODE:
+
+
+OTHER FUNCTIONS NEEDED FOR THIS PROJECT PSUEDO CODE:
