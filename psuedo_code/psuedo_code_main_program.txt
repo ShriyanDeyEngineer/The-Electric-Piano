@@ -10,6 +10,7 @@ Notes:
 
 MAIN FUNCTION PSUEDO CODE:
 
+// #include gpio.h --> idk if we need this or not but Jason added it, so i did too
 
 
 --------------------------------------------------------------------------
