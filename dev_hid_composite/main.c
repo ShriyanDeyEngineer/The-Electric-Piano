@@ -57,7 +57,7 @@ void hid_task(void);
 int main(void)
 {
   board_init();
-
+  
   // init device stack on configured roothub port
   const tusb_rhport_init_t rh_init = {
     .role = TUSB_ROLE_DEVICE,

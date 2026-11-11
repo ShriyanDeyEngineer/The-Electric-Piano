@@ -1,0 +1,7 @@
+- 3 states
+
+Initializing pins:
+gpio_init(PIN NUMBER)
+gpio_set_dir(PIN NUMBER, A) Where A = GPIO_OUT or A = GPIO_IN
+gpio_put(PIN NUMBER, BOOLEAN VALUE) BOOLEAN VALUE = true for pull up and BOOLEAN VALUE = false for pull down
+
