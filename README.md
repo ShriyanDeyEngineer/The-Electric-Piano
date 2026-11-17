@@ -1,2 +1,2 @@
 # The-Electric-Piano
-A aurafull electric piano.
+An aurafull electric piano.
