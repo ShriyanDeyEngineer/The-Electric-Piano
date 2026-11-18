@@ -17,7 +17,7 @@ What we need controller to do:
     - hold sound when button is pressed down (pull down button)
     - when two buttons are pressed at the same time (or during the same time interval), the sound for both buttons should play at the same time
 - potentiometer moves piano keys between octaves
-    - have the octave change every 10 ohms (example) 
+    - Split poteniometer into dial into 7 intervals for 7 octaves (every 1/7 of the max resistance triggers an octave change).
         - have something to indicate when the octave has changed?
 - 
 
