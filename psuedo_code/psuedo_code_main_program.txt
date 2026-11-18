@@ -12,6 +12,14 @@ MAIN FUNCTION PSUEDO CODE:
 
 // #include gpio.h --> idk if we need this or not but Jason added it, so i did too
 
+What we need controller to do:
+- when button is pushed, play the sound corresponding to the button pushed
+    - hold sound when button is pressed down (pull down button)
+    - when two buttons are pressed at the same time (or during the same time interval), the sound for both buttons should play at the same time
+- potentiometer moves piano keys between octaves
+    - have the octave change every 10 ohms (example) 
+        - have something to indicate when the octave has changed?
+- 
 
 --------------------------------------------------------------------------
 OTHER FUNCTIONS NEEDED FOR THIS PROJECT PSUEDO CODE (Functions specific to the product and other functions that may be needed for the microcontroller to work):
