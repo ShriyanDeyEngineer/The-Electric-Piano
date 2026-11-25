@@ -24,8 +24,8 @@
 
  /* Authors: Dat Vu, Shriyan Dey, Joy Deng, Naomi Rahn, Maaz Rahman, & Aadi Sharma */
 
- #include <stdio.h>
- #include <string.h>
+#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 #include "pico/cyw43_arch.h"
@@ -38,6 +38,8 @@ void led_blinking_task(void);
 void hid_task(void);
 
 /*------------- MAIN -------------*/
+int buttonInputPIN = 19;
+int ledPIN = 14;
 int main(void)
 {
   board_init();
@@ -46,6 +48,13 @@ int main(void)
   {
     return -1;
   }
+
+  gpio_init(buttonInputPIN);
+  gpio_set_dir(buttonInputPIN, GPIO_IN);
+  gpio_pull_down(buttonInputPIN);
+
+  gpio_init(ledPIN);
+  gpio_set_dir(ledPIN, GPIO_OUT);
   
   // init device stack on configured roothub port
   const tusb_rhport_init_t rh_init = {
@@ -59,6 +68,17 @@ int main(void)
   {
     tud_task(); // tinyusb device task
     led_blinking_task();
+
+    if (!gpio_get(buttonInputPIN)) 
+    {
+        gpio_put(ledPIN, true);
+        //printf("ON");
+    } 
+    else 
+    {
+      gpio_put(ledPIN, false);
+      //printf("OFF");
+    }
 
     hid_task();
   }
