@@ -24,10 +24,11 @@
 
  /* Authors: Dat Vu, Shriyan Dey, Joy Deng, Naomi Rahn, Maaz Rahman, & Aadi Sharma */
 
+ #include <stdio.h>
+ #include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
+#include "pico/cyw43_arch.h"
 #include "bsp/board_api.h"
 #include "tusb.h"
 
@@ -40,6 +41,11 @@ void hid_task(void);
 int main(void)
 {
   board_init();
+
+  if(cyw43_arch_init())
+  {
+    return -1;
+  }
   
   // init device stack on configured roothub port
   const tusb_rhport_init_t rh_init = {
